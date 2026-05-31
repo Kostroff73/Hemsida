@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
-        observer.unobserve(entry.target); // Animera bara en gång
+      } else {
+        entry.target.classList.remove('active');
       }
     });
   }, observerOptions);
