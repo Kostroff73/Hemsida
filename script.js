@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { container: '.hero', target: '.cover-stage', glow: '.mouse-glow', tilt: 12 },
     { container: '#boken', target: '.book-panel', glow: '.mouse-glow', tilt: 20 },
     { container: '#boken', target: '.book-panel img', glow: '.mouse-glow', tilt: 20 },
+    { container: '#store', target: '.store-grid', glow: '.mouse-glow', tilt: 4 },
     { container: '#bjorn', target: '.bjorn-photo img', glow: '.mouse-glow', tilt: 15 },
     { container: '#forelasningar', target: '.lect-grid', glow: '.mouse-glow', tilt: 4 },
     { container: '#sagt', target: '.sagt-grid', glow: '.mouse-glow', tilt: 4 },
