@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Scroll Reveal Logic
   const observerOptions = {
-    threshold: 0.15
+    threshold: 0,
+    rootMargin: '0px 0px 100px 0px'
   };
 
   const observer = new IntersectionObserver((entries) => {
@@ -31,7 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Interactive Tilt & Glow Effect
   const effectConfigs = [
     { container: '.hero', target: '.cover-stage', glow: '.mouse-glow', tilt: 12 },
-    { container: '#boken', target: '.book-panel', glow: '.mouse-glow', tilt: 20 }
+    { container: '#boken', target: '.book-panel', glow: '.mouse-glow', tilt: 20 },
+    { container: '#bjorn', target: '.bjorn-photo img', glow: '.mouse-glow', tilt: 15 },
+    { container: '#forelasningar', target: '.lect-grid', glow: '.mouse-glow', tilt: 4 },
+    { container: '#sagt', target: '.sagt-grid', glow: '.mouse-glow', tilt: 4 },
+    { container: '#kontakt', target: '.contact-inner', glow: '.mouse-glow', tilt: 4 }
   ];
 
   effectConfigs.forEach(config => {
