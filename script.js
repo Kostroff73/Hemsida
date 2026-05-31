@@ -28,33 +28,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Interactive Tilt Effect för bokomslaget
-  const hero = document.querySelector('.hero');
-  const cover = document.querySelector('.cover-stage');
-  const glow = document.querySelector('.hero-glow');
+  // Interactive Tilt & Glow Effect
+  const effectConfigs = [
+    { container: '.hero', target: '.cover-stage', glow: '.mouse-glow', tilt: 12 },
+    { container: '#boken', target: '.book-panel', glow: '.mouse-glow', tilt: 20 }
+  ];
 
-  if (hero && cover) {
-    hero.addEventListener('mousemove', (e) => {
+  effectConfigs.forEach(config => {
+    const container = document.querySelector(config.container);
+    const target = container?.querySelector(config.target);
+    const glow = container?.querySelector(config.glow);
+
+    if (container && target) {
+      container.addEventListener('mousemove', (e) => {
       const { clientX, clientY } = e;
-      const { left, top, width, height } = hero.getBoundingClientRect();
+      const { left, top, width, height } = container.getBoundingClientRect();
       
       const x = (clientX - left) / width - 0.5; // -0.5 till 0.5
       const y = (clientY - top) / height - 0.5;
 
-      cover.style.transform = `perspective(1000px) rotateY(${x * 15}deg) rotateX(${-y * 15}deg) translateY(${y * -10}px)`;
+      target.style.transition = 'none';
+      target.style.transform = `perspective(1000px) rotateY(${x * config.tilt}deg) rotateX(${-y * config.tilt}deg)`;
       
       if (glow) {
         glow.style.opacity = '1';
         glow.style.left = `${clientX - left}px`;
         glow.style.top = `${clientY - top}px`;
       }
-    });
+      });
 
-    hero.addEventListener('mouseleave', () => {
-      cover.style.transform = `perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(0px)`;
-      if (glow) glow.style.opacity = '0';
-    });
-  }
+      container.addEventListener('mouseleave', () => {
+        target.style.transition = 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1)';
+        target.style.transform = `perspective(1000px) rotateY(0deg) rotateX(0deg)`;
+        if (glow) glow.style.opacity = '0';
+      });
+    }
+  });
 });
 
 function closeNav() {
