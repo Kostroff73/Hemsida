@@ -42,6 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
     { container: '#kontakt', target: '.contact-inner', glow: '.mouse-glow', tilt: 4 }
   ];
 
+  // Kör bara interaktiva effekter på enheter som har en mus (förbättrar mobilprestanda)
+  const isHoverable = window.matchMedia('(hover: hover)').matches;
+
+  if (isHoverable) {
   effectConfigs.forEach(config => {
     const container = document.querySelector(config.container);
     const target = container?.querySelector(config.target);
@@ -78,14 +82,22 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+  }
 
   // Hero Book Parallax
   const heroArt = document.querySelector('.hero-art');
   if (heroArt) {
+    let ticking = false;
     window.addEventListener('scroll', () => {
-      const scrolled = window.scrollY;
-      if (scrolled < window.innerHeight) {
-        heroArt.style.transform = `translateY(${scrolled * 0.12}px)`;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrolled = window.scrollY;
+          if (scrolled < window.innerHeight) {
+            heroArt.style.transform = `translateY(${scrolled * 0.12}px)`;
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     });
   }
