@@ -49,7 +49,7 @@ a{color:inherit;text-decoration:none}
 h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.2;letter-spacing:-.01em}
 .it{font-style:italic;color:var(--gold);background:linear-gradient(90deg,var(--gold),var(--yellow),var(--cream),var(--yellow),var(--gold));background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:paradox-shimmer 8s linear infinite}
 
-.nav{position:sticky;top:0;z-index:50;background:rgba(5,8,15,0.8);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(5,8,15,0.8);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .nav-in{max-width:1240px;margin:0 auto;padding:16px 40px;display:grid;grid-template-columns:2fr auto 1fr;align-items:center;gap:24px}
 .brand{font-family:var(--serif);font-size:23px;font-weight:600;letter-spacing:0;white-space:nowrap;color:var(--cream)}
 .brand b{color:var(--gold);font-weight:600;font-style:italic;background:linear-gradient(90deg,var(--gold),var(--yellow),var(--cream),var(--yellow),var(--gold));background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:paradox-shimmer 8s linear infinite}
