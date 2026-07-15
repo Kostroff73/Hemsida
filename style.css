@@ -276,6 +276,27 @@ h2.copy-h2{font-size:clamp(19px,2.2vw,26px);font-weight:500;color:var(--cream);m
 .def-box .def-q{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .def-box p:last-child{font-size:17px;color:var(--cream);line-height:1.7}
 
+/* PARADOXSAMHALLET PAGE */
+.ps-hero-inner{text-align:center;max-width:800px;margin:0 auto;position:relative;z-index:2;padding:40px 0 20px}
+.ps-hero-inner .eyebrow{justify-content:center}
+.ps-hero-inner .eyebrow::before{display:none}
+.ps-hero-inner h1{font-size:clamp(64px,9vw,110px)}
+.ps-hero-inner .lead{max-width:660px;margin:0 auto}
+.ps-breadcrumb{display:flex;align-items:center;gap:8px;justify-content:center;font-size:14px;color:var(--muted);margin-bottom:32px}
+.ps-breadcrumb a{color:var(--muted);text-decoration:none;transition:color .2s}
+.ps-breadcrumb a:hover{color:var(--cream)}
+.ps-breadcrumb span:last-child{color:var(--gold)}
+.ps-content{padding:80px 0}
+.ps-content .def-box{max-width:800px;margin:0 auto 56px}
+.ps-prose{max-width:800px;margin:0 auto}
+.ps-prose h2{font-family:var(--serif);font-size:clamp(26px,3.2vw,38px);font-weight:500;color:var(--cream);margin:0 0 20px;letter-spacing:-.01em}
+.ps-prose p{color:var(--muted);font-size:17px;line-height:1.7;margin-bottom:16px}
+.ps-paradoxes{padding:80px 0;border-top:1px solid var(--line)}
+.ps-lead-sub{text-align:center;color:var(--muted);font-size:17px;line-height:1.7;max-width:600px;margin:-32px auto 56px}
+.ps-back{text-align:center;padding-top:56px;border-top:1px solid var(--line);margin-top:56px}
+.ps-back p{color:var(--muted);font-size:15px;margin-bottom:20px}
+.ps-buy{padding-bottom:120px}
+
 /* AUDIENCE SECTION */
 .audience{padding:96px 0;border-top:1px solid var(--line)}
 .audience-head{text-align:center;margin-bottom:60px}
