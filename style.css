@@ -267,6 +267,10 @@ p.intro-text {
 }
 .copy b{color:var(--cream);font-weight:600}
 
+.def-box{border-left:3px solid var(--gold);padding:24px 28px;background:var(--bg-2);border-radius:0 8px 8px 0;margin-bottom:8px}
+.def-box .def-q{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.def-box p:last-child{font-size:17px;color:var(--cream);line-height:1.7}
+
 .themes{display:block;padding:0 0 60px}
 .themes-subtitle {
   font-family: var(--serif);
