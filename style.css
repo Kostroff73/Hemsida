@@ -276,6 +276,18 @@ h2.copy-h2{font-size:clamp(19px,2.2vw,26px);font-weight:500;color:var(--cream);m
 .def-box .def-q{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .def-box p:last-child{font-size:17px;color:var(--cream);line-height:1.7}
 
+/* AUDIENCE SECTION */
+.audience{padding:96px 0;border-top:1px solid var(--line)}
+.audience-head{text-align:center;margin-bottom:60px}
+.audience-head .sec-tag{justify-content:center}
+.audience-head h2{font-size:clamp(38px,5.5vw,72px);margin-top:14px}
+.aud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.aud-card{background:rgba(19,35,59,0.4);border:1px solid var(--line);border-radius:20px;padding:42px 36px;display:flex;flex-direction:column;gap:14px;transition:border-color .3s}
+.aud-card:hover{border-color:rgba(242,161,28,0.35)}
+.aud-num{font-family:var(--serif);font-size:52px;font-weight:500;color:rgba(242,161,28,0.2);line-height:1;letter-spacing:-.02em}
+.aud-card h3{font-family:var(--serif);font-size:clamp(20px,2.2vw,26px);font-weight:500;color:var(--cream)}
+.aud-card p{color:var(--muted);font-size:17px;line-height:1.7}
+
 .themes{display:block;padding:0 0 60px}
 .themes-subtitle {
   font-family: var(--serif);
@@ -765,7 +777,7 @@ footer{background:#05080F;color:var(--muted);padding:30px 0}
   .wrap,.nav-in{padding-left:24px;padding-right:24px}
   .nav-in{display: flex; justify-content: space-between; align-items: center;}
   .brand{flex: 1;}
-  .hero-grid,.themes,.bjorn-grid,.contact-grid,.sec-head,.store-grid{grid-template-columns:1fr;gap:40px}
+  .hero-grid,.themes,.bjorn-grid,.contact-grid,.sec-head,.store-grid,.aud-grid{grid-template-columns:1fr;gap:40px}
   .theme-list { grid-template-columns: 1fr; }
   .store-col { align-items: center; }
   .hero{padding:40px 0 60px}.lead{font-size:22px}
