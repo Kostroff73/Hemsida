@@ -267,6 +267,11 @@ p.intro-text {
 }
 .copy b{color:var(--cream);font-weight:600}
 
+h2.copy-h2{font-size:clamp(19px,2.2vw,26px);font-weight:500;color:var(--cream);margin:36px 0 10px;letter-spacing:-.01em}
+.copy-list{list-style:none;padding:0;margin:0 0 24px}
+.copy-list li{position:relative;padding:7px 0 7px 22px;color:var(--muted);font-size:17px;line-height:1.65}
+.copy-list li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+
 .def-box{border-left:3px solid var(--gold);padding:24px 28px;background:var(--bg-2);border-radius:0 8px 8px 0;margin-bottom:8px}
 .def-box .def-q{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
 .def-box p:last-child{font-size:17px;color:var(--cream);line-height:1.7}
@@ -713,6 +718,13 @@ p.intro-text {
 .vcard .who{margin-top:20px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
 
 /* KONTAKT */
+.faq{padding:104px 0;position:relative;overflow:hidden}
+.faq-list{display:flex;flex-direction:column;padding:40px 0 0}
+.faq-item{border-top:1px solid var(--line);padding:36px 0}
+.faq-item:last-child{border-bottom:1px solid var(--line)}
+.faq-item h3{font-family:var(--serif);font-size:clamp(20px,2.2vw,26px);font-weight:500;color:var(--cream);margin-bottom:14px}
+.faq-item p{color:var(--muted);font-size:17px;line-height:1.7;max-width:72ch}
+
 .contact{padding:104px 0;position:relative;overflow:hidden}
 .contact::before{content:"";position:absolute;bottom:-30%;left:-6%;width:680px;height:680px;background:radial-gradient(circle,rgba(242,161,28,.18),transparent 64%)}
 .contact-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
