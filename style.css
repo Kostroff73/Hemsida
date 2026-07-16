@@ -246,6 +246,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.2;letter-spacing
 .sec-head{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start;padding:104px 0 0}
 .sec-tag{font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;font-weight:700;color:var(--gold);display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--gold),var(--yellow),var(--cream),var(--yellow),var(--gold));background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:paradox-shimmer 8s linear infinite}
 .sec-head h2{font-size:clamp(54px,6.6vw,96px);margin-top:14px;padding-bottom:0.15em}
+.nowrap-h2{white-space:nowrap;font-size:clamp(38px,8.5vw,96px)}
 .copy p{margin-bottom:18px;color:var(--muted);font-size:19px}
 .copy-reveal {
   font-family: var(--serif);
