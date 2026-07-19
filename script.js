@@ -102,6 +102,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Publit-köp: antal-väljare som uppdaterar checkout-länkens amount (bestall-sidan)
+  document.querySelectorAll('.publit-buy').forEach(box => {
+    const num = box.querySelector('.qty-num');
+    const link = box.querySelector('.publit-checkout');
+    if (!num || !link) return;
+    box.querySelectorAll('.qty-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const val = Math.min(99, Math.max(1, parseInt(num.textContent, 10) + parseInt(btn.dataset.dir, 10)));
+        num.textContent = val;
+        const url = new URL(link.href);
+        url.searchParams.set('amount', val);
+        link.href = url.toString();
+      });
+    });
+  });
+
   // Golden Particles Logic (Point 6) - Applied to Hero and Marquee
   ['.hero', '.marq'].forEach(selector => {
     const container = document.querySelector(selector);
