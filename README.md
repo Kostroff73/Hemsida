@@ -14,7 +14,7 @@ Live: https://www.wikhamn.se/
 
 ```
 index.html      Huvudsidan (single page), alla sektioner via ankarlänkar
-bestall/        Beställningssida med Publit-widget (direktköp) och återförsäljarlänkar
+bestall/        Beställningssida med direktköp via Publit och återförsäljarlänkar
 style.css       All styling, organiserad i namngivna kommentarsblock per sektion
 script.js       Interaktivitet: mobilmeny, scroll-reveal, tilt/glow-effekter, partiklar
 assets/         Bilder (porträtt, bokomslag m.m.)
@@ -25,7 +25,6 @@ CNAME           Anpassad domän för GitHub Pages (www.wikhamn.se)
 AGENTS.md       Kanoniska instruktioner för kodagenter (Claude Code, Codex m.fl.)
 CLAUDE.md       Claude Code-specifika tillägg (pekar på AGENTS.md)
 DESIGN.md       Designsystem: färger, typografi, klasser, sidanatomi
-PLAN.md         Körbar plan för beställningssidan /bestall/ (order.wikhamn.se)
 ```
 
 Sidan är en enda `index.html` med sektioner (`#boken`, `#audience`, `#store`, `#bjorn`, `#forelasningar`, `#sagt`, `#faq`, `#kontakt`) som navigeras via ankarlänkar i `.nav`.

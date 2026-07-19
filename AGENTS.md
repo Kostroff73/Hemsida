@@ -5,7 +5,6 @@ Kanoniska instruktioner för alla kodagenter (Claude Code, Codex m.fl.) i detta 
 **Läs vid behov (spara tokens – läs bara det som är relevant för uppgiften):**
 
 - `DESIGN.md` – designsystem (färger, typografi, klasser, sidanatomi). Obligatorisk före visuellt arbete.
-- `PLAN.md` – pågående arbete: beställningssidan `/bestall/`. Följ och bocka av stegen där.
 - `README.md` – struktur, driftsättning, SEO-översikt.
 
 ## Projektmål

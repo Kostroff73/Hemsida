@@ -1,6 +1,6 @@
 # CLAUDE.md – Hemsida
 
-Alla projektinstruktioner finns i [AGENTS.md](AGENTS.md) – följ den. Design: [DESIGN.md](DESIGN.md). Pågående arbete: [PLAN.md](PLAN.md).
+Alla projektinstruktioner finns i [AGENTS.md](AGENTS.md) – följ den. Design: [DESIGN.md](DESIGN.md).
 
 ## Claude Code-specifikt
 
